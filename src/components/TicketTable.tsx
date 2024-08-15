@@ -41,7 +41,7 @@ const columns: GridColDef[] = [
 
 
 
-export default function DataTable({rows} : {rows?:[]}) {
+export default function DataTable({rows} : {rows?:any}) {
 
   return (
     <div style={{ width: "100%" }}>
