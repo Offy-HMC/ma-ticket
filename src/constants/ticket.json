@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "ticketId": "scg-12348",
+        "subject": "problem with crystal report",
+        "customerId": "scg",
+        "customer": "siam chemical",
+        "contact": "chokeanan@scg.com",
+        "detail": "some problem have occur when try to display report from crystal report",
+        "module": "localize",
+        "priority": 3,
+        "status": "pending",
+        "date": "2024-02-23"
+    },
+    {
+        "id": 2,
+        "ticketId": "scg-12358",
+        "subject": "problem with crystal report2",
+        "customerId": "scg",
+        "customer": "siam chemical",
+        "contact": "chokeanan@scg.com",
+        "detail": "some problem have occur when try to display report from crystal report2",
+        "module": "localize",
+        "priority": 2,
+        "status": "close",
+        "date": "2024-02-23"
+    }
+ 
+]
