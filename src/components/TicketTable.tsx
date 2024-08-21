@@ -20,7 +20,7 @@ const columns: GridColDef[] = [
   // { field: "dateTime", headerName: "Date-Time", type: "dateTime", width: 200 },
   // { field: "module", headerName: "Module", width: 200 },
   // { field: "company", headerName: "Company", width: 150 },
-  { field: "contact", headerName: "Contact", width: 130 },
+  // { field: "contact", headerName: "Contact", width: 130 },
   { field: "status", headerName: "Status", width: 100 },
   { field: "statusType", headerName: "Status Type", width: 100 },
   { field: "channel", headerName: "Channel", width: 130 },
@@ -37,6 +37,12 @@ const columns: GridColDef[] = [
   //   type: "dateTime",
   //   width: 200,
   // },
+  {
+    field: "createdTime",
+    headerName: "Created Time",
+    type: "dateTime",
+    width: 200,
+  },
 ];
 
 
