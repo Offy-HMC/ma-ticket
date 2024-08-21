@@ -9,7 +9,7 @@ export default async function PageZoho() {
     <>
     <Box>Zoho</Box>
     <Stack></Stack>
-    <DataTable rows={zohoTicket.data}/>
+    <DataTable rows={zohoTicket}/>
     </>
 
   );
