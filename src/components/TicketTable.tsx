@@ -43,7 +43,7 @@ const columns: GridColDef[] = [
   {
     field: "createdTime",
     headerName: "Created Time",
-    type: "Date",
+    // type: "Date",
     width: 200,
     // valueFormatter: value => formatDate(value)
     valueFormatter: params => 
