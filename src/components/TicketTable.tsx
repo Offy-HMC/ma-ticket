@@ -2,6 +2,7 @@
 
 import { DataGrid, GridColDef, GridToolbar  } from "@mui/x-data-grid";
 import useZohoTicketList from "@/app/hooks/useZoho";
+import moment from 'moment';
 // ticketNumber: '15353',
 // subject: 'SAP Log TraceDataForDebug',
 // email: 'kamnat@nip.co.th',
@@ -11,6 +12,8 @@ import useZohoTicketList from "@/app/hooks/useZoho";
 // channel: 'Email',
 // customerResponseTime: '2024-08-14T09:56:21.000Z',
 // webUrl: 'https://desk.zoho.com/support/humanicapcl/ShowHomePage.do#Cases/dv/591690000030740420'
+
+const formatDate = (isoDate) => moment(isoDate).format('MMM D, YYYY h:mm A');
 
 const columns: GridColDef[] = [
   { field: "ticketNumber", headerName: "Ticket No.", width: 110 },
@@ -40,8 +43,9 @@ const columns: GridColDef[] = [
   {
     field: "createdTime",
     headerName: "Created Time",
-    type: "dateTime",
+    type: "Date",
     width: 200,
+    valueFormatter : ({ value }) => formatDate(value),
   },
 ];
 

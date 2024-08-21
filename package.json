@@ -19,6 +19,7 @@
     "@mui/x-data-grid": "^7.12.0",
     "@mui/x-data-grid-generator": "^7.12.0",
     "axios": "^1.7.4",
+    "moment": "^2.30.1",
     "next": "14.2.5",
     "next-auth": "^4.24.7",
     "react": "^18",
