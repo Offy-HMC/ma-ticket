@@ -13,7 +13,7 @@ import moment from 'moment';
 // customerResponseTime: '2024-08-14T09:56:21.000Z',
 // webUrl: 'https://desk.zoho.com/support/humanicapcl/ShowHomePage.do#Cases/dv/591690000030740420'
 
-const formatDate = (isoDate) => moment(isoDate).format('MMM D, YYYY h:mm A');
+let formatDate = (v : string) => moment(v).format('MMM D, YYYY h:mm A');
 
 const columns: GridColDef[] = [
   { field: "ticketNumber", headerName: "Ticket No.", width: 110 },
@@ -45,7 +45,9 @@ const columns: GridColDef[] = [
     headerName: "Created Time",
     type: "Date",
     width: 200,
-    valueFormatter : ({ value }) => formatDate(value),
+    // valueFormatter: value => formatDate(value)
+    valueFormatter: params => 
+      moment(params).format("DD/MM/YYYY hh:mm A"),
   },
 ];
 
